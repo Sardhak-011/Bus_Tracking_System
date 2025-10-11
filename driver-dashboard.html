@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SmartBus - Driver Dashboard</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap" rel="stylesheet">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+  <div class="header">
+    <h1><i class="fas fa-steering-wheel"></i> Driver Dashboard</h1>
+    <p>Welcome, Driver! (Mock: driver@example.com) - Today's Assignments</p>
+  </div>
+
+  <div class="container my-5">
+    <div class="row">
+      <div class="col-md-6">
+        <div class="card">
+          <h5>Assigned Route</h5>
+          <div id="route-details" class="placeholder">
+            <p><strong>Layer:</strong> Dynamic<br><strong>Route:</strong> Campus A → City Center (Stops: 3)<br><strong>Schedule:</strong> 08:00 AM - 09:00 AM</p>
+          </div>
+          <div class="text-center mt-3">
+            <button onclick="alert('Trip Started! GPS simulation active.')" class="btn btn-success me-2">Start Trip</button>
+            <button onclick="alert('Trip Ended! Report submitted.')" class="btn btn-danger">End Trip</button>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6">
+        <div class="card">
+          <h5>Passenger Count & Alerts</h5>
+          <ul class="list-group">
+            <li class="list-group-item">Current Passengers: 12/30</li>
+            <li class="list-group-item">Next Stop: University Gate (ETA: 2 min)</li>
+            <li class="list-group-item">Alert: Traffic delay on Main Road</li>
+          </ul>
+          <button onclick="alert('Message sent to Admin: Need backup.')" class="btn btn-outline-primary w-100 mt-3">Send Alert</button>
+        </div>
+      </div>
+    </div>
+    <div class="row mt-4">
+      <div class="col-md-12">
+        <div class="card">
+          <h5>Route Map (Placeholder)</h5>
+          <div class="map-placeholder">
+            <i class="fas fa-route fa-3x text-primary"></i><br>
+            <p>Map View: Your bus position and stops would display here.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <a href="tracking.html" class="btn btn-primary d-block text-center mt-3">View Live Tracking</a>
+  </div>
+
+  <footer class="footer">
+    <div class="container">
+      <p>&copy; 2023 SmartBus System. Built for [Your College Name]. | <a href="about.html">About</a> | <a href="contact.html">Contact</a></p>
+      <p class="mb-0 small">Powered by 3-Layer Routing 🚍</p>
+    </div>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>
